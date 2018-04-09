@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Penggunaan Id dan Class</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="bg-3">
+		<div class="container">
+			<div class="poto">
+			<img src="img/jihadulakbar.png">
+			<h1>Jihadul Akbar</h1>
+			</div>
+			<div class="icon">
+				<a href="#"><i class="fa fa-facebook fa-3x"></i></a>
+				<a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+				<a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+				<a href="#"><i class="fa fa-youtube fa-3x"></i></a>
+				<a href="#"><i class="fa fa-telegram fa-3x"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="bg-1">
+		<div class="container">
+			<h1>KEMAMPUAN</h1>
+		<div class="perataan">
+			<div class="box-3">
+				<h2>HTML</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="box-3">
+				<h2>CSS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="box-3">
+				<h2>JS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+<div class="bg-2">
+	<div class="container">
+		<div class="perataan">
+			<div class="box-2">
+				<h2>Kontak Kami</h2>
+				<form>
+					Email : <input type="email" name=""> <br>
+					Pesan : <textarea cols="20"></textarea> <br>
+					<input type="submit" name="" value="Kirim">
+				</form>
+
+			</div>
+			<div class="box-2">
+				<h2>Peta Lokasi</h2>
+				<div id="map" style="width: 100%; height: 250px;"></div>
+
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="container">
+		<div class="footer">
+			Copyright@ Jihadul Akbar 
+		</div>
+	</div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -8.6131156, lng: 116.3289857};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYQqqe9vWTQNrf2pv3C9fdzAbukst7cKk&callback=initMap&libraries=places"></script> 
+
+</body>
+</html>
